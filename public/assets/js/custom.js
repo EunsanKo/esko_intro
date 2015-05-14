@@ -86,8 +86,14 @@
 				- destroy:
 				$( selector ).cbpQTRotator( 'destroy' );
 				*/
+				$('#soccerStory').on("click",function(){
+					$( '#cbp-qtrotator-soccer' ).cbpQTRotator({interval:8000});	
+				});
 
-				$( '#cbp-qtrotator' ).cbpQTRotator();
+				$('#hobbyStory').on("click",function(){
+					$( '#cbp-qtrotator-hobby' ).cbpQTRotator({interval:8000});	
+				})
+				
 
 			} );
 		
@@ -136,7 +142,7 @@
 
 			e.preventDefault();
 
-			var c_name = $('#c_name').val();
+			/*var c_name = $('#c_name').val();
 			var c_email = $('#c_email').val();
 			var c_message = $('#c_message ').val();
 			var response = $('#contact-form .ajax-response');
@@ -151,7 +157,7 @@
 				    response.html("Message Sent. I will contact you asap. Thanks.").fadeIn(500);
 				}
             
-            	return false;
+            	return false;*/
 			});
 
 	});
